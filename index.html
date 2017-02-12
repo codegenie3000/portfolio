@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script
+			src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<script
+			src="https://code.jquery.com/jquery-3.1.1.min.js"
+			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			crossorigin="anonymous"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.fixed').visibility({
+				type: 'fixed',
+				offset: 15
+			});
+		});
+	</script>
+	<style>
+		img.profile-image {
+			float: right;
+			height: 200px;
+			width: 200px;
+			padding: 10px;
+			border-radius: 50%;
+		}
+		section.light-blue {
+			background-color: lightblue;
+		}
+		.test{
+			background-color: blue;
+			padding: 0em;
+		}
+		.test.overlay{
+			position: fixed;
+		}
+	</style>
+	<title>Jonathan Peralez, Developer</title>
+</head>
+<body>
+
+<header class="ui text container">
+	<h1 class="ui header">Jonathan Peralez</h1>
+	<p>Full-Stack Developer and business professional</p>
+</header>
+
+<nav class="ui borderless menu fixed">
+	<div class="ui text container">
+		<a href="#" class="item">About</a>
+		<a href="#" class="item">Portfolio</a>
+		<a href="#" class="item">Contact</a>
+	</div>
+</nav>
+
+<section class="light-blue">
+	<div class="ui text container grid">
+		<div class="sixteen wide column">
+			<p></p>
+			<p>A full-stack developer and business professional, Jonathan Peralez, combines software development expertise business acumen and experience.</p>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Eastern_Grey_Squirrel.jpg" class="profile-image">
+			<p></p>
+
+			<p>Open up in there! Oh, no! There isn't any other way out. I can't hold them off forever! Now what? This is some rescue. When you came in here, didn't you have a plan for getting out? He's the brains, sweetheart. Well, I didn't... What the hell are you doing? Somebody has to save our skins. Into the garbage chute, wise guy. Get in there you big furry oaf! I don't care what you smell! Get in there and don't worry about it. Wonderful girl! Either I'm going to kill her or I'm beginning to like her. Get in there!</p>
+		</div>
+	</div>
+</section>
+
+<section class="ui text container grid">
+	<div class="sixteen wide column">
+		<h1>Portfolio</h1>
+	</div>
+	<div class="eight wide column">Classroom Genie website</div>
+	<div class="eight wide column">Classroom Genie web application</div>
+</section>
+
+</body>
+</html>

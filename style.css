@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: auto;
+    padding: 10px 0;
+    background-color: teal;
+}
+div.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+header h1 {
+    margin-top: 0;
+}
+nav {
+    margin: auto;
+    text-align: center;
+    padding: 10px 0;
+    background-color: lightgray;
+}
+nav a:nth-of-type(2), nav a:nth-of-type(3) {
+    padding-left: 10px;
+}
+.column:nth-of-type(1) {
+    width: 50%;
+    float: left;
+    background-color: yellow;
+}
+.column:nth-of-type(2) {
+    width: 50%;
+    float: right;
+    background-color: green;
+}
+
+section .container {
+    clear: both;
+}
+
+section .container h1, section .container h2 {
+    text-align: center;
+}
+div.column p {
+    text-align: center;
+}
