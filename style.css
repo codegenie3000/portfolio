@@ -8,8 +8,24 @@ body {
     background-color: #E4EFF7;
 }
 
-p li {
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3, h4, h5 {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+p, li {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6em;
+}
+
+h2 {
+    color: #344756;
+}
+
+p.title {
     color: white;
 }
 
@@ -38,8 +54,9 @@ header div.header img {
     margin-bottom: 1em;
 }
 
-header div.header p {
+p.orange {
     color: #AA6322;
+    font-size: 1.2em;
 }
 
 img.down-arrow {
@@ -64,7 +81,6 @@ div p.title {
     text-align: left;
 }
 
-
 nav div.menu ul {
     width: 65%;
     text-align: right;
@@ -86,7 +102,9 @@ nav div.menu ul li a {
 
 div.container {
     max-width: 960px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    margin: 15px auto;
+    overflow: auto;
 }
 
 div.container > h1 {
@@ -104,6 +122,7 @@ div.panel {
     float: left;
     /*margin-right: 6px;*/
 }
+
 div.paragraph {
     width: 468px;
     float: right;
@@ -116,6 +135,7 @@ div.skill-list {
     clear: both;
     overflow: auto;
     background-color: RGBA(195,211,226,.5);
+    height: 300px;
     padding-bottom: 5px;
 }
 
@@ -142,12 +162,13 @@ ul.skill-menu li a {
     /*display: inline-block;*/
     width: 100%;
     text-decoration: none;
+    color: #344756;
 }
 div.skill-list ul li {
     display: inline-block;
     overflow: auto;
     margin-top: 10px;
-    padding: 10px 0;
+    padding: 6px 0;
 }
 
 div.clear {
