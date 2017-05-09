@@ -128,22 +128,23 @@ div.container > h1 {
     color: #55788E;
 }
 
-div.panel {
+/*div.panel {*/
     /*position: relative;*/
-    width: 468px;
-    float: left;
+/*    width: 468px;*/
+/*    float: left;*/
     /*margin-right: 6px;*/
-}
+/*}*/
 
 div.paragraph {
-    width: 468px;
-    float: right;
+    max-width: 50%;
+    float: left;
+/*    clear: both;*/
     /*margin-left: 6px;*/
 }
 
+/*
 div.skill-list {
     display: block;
-    /*margin-top: 10px;*/
     clear: both;
     overflow: auto;
     background-color: RGBA(195,211,226,.5);
@@ -165,13 +166,12 @@ ul.skill-menu li, div.skill-list ul li {
     width: 234px;
 }
 ul.skill-menu li.active {
-    background-color: RGBA(195,211,226,.5); /*#C3D3E2*/
+    background-color: RGBA(195,211,226,.5);
 }
 ul.skill-menu li {
     background-color: RGBA(214,228,234,.5);
 }
 ul.skill-menu li a {
-    /*display: inline-block;*/
     width: 100%;
     text-decoration: none;
     color: #344756;
@@ -181,6 +181,24 @@ div.skill-list ul li {
     overflow: auto;
     margin-top: 10px;
     padding: 6px 0;
+}
+*/
+
+.skills {
+    width: 468px;
+/*    max-width: 50%;*/
+    float: left;
+}
+
+.skills ul {
+/*    padding-left: 0;*/
+}
+
+.skills li {
+/*    display: inline-block;*/
+    margin-top: 10px;
+    float: left;
+    width: 50%;
 }
 
 div.clear {
