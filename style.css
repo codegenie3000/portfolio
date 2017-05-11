@@ -71,19 +71,34 @@ nav div.menu {
     left: 0;
 }
 
+nav .menu-dark {
+    background-color: rgb(12, 19, 25);
+}
+
+nav .menu-light {
+    background-color: rgb(202,220,229);
+}
+
 div p.title {
     font-family: 'Montserrat', sans-serif;
-    display: block;
+/*    display: block;*/
     /*width: 35%;*/
     width: 200px;
-    color: white;
     float: left;
     text-transform: uppercase;
     padding-left: 20px;
     text-align: left;
 }
 
-nav div.menu #name-underline {
+div p.title-dark {
+    color: white;
+}
+
+div p.title-light {
+    color: rgb(85,120,142);
+}
+
+nav div.menu .name-underline {
     border-bottom: 1px solid white;
     height: 10px;
     width: 160px;
@@ -93,6 +108,14 @@ nav div.menu #name-underline {
     left: 0;
     padding-bottom: 2px;
     margin-left: 26px;
+}
+
+nav div.menu .underline-dark {
+    border-bottom: 1px solid white;
+}
+
+nav div.menu .underline-light {
+    border-bottom: 1px solid rgb(85,120,142);
 }
 
 nav div.menu ul {
@@ -113,7 +136,7 @@ nav div.menu ul li {
 
 nav div.menu ul li a {
     text-decoration: none;
-    color: #55788E;
+    color: rgb(85,120,142);
 }
 
 div.container {
@@ -128,77 +151,86 @@ div.container > h1 {
     color: #55788E;
 }
 
-/*div.panel {*/
-    /*position: relative;*/
-/*    width: 468px;*/
-/*    float: left;*/
-    /*margin-right: 6px;*/
-/*}*/
-
 div.paragraph {
     max-width: 50%;
     float: left;
-/*    clear: both;*/
-    /*margin-left: 6px;*/
+    padding: 8px;
 }
 
-/*
-div.skill-list {
-    display: block;
-    clear: both;
-    overflow: auto;
-    background-color: RGBA(195,211,226,.5);
-    height: 260px;
-    padding-bottom: 5px;
+div.paragraph>h2 {
+    margin-top: 0.3em;
 }
-
-ul.skill-menu, div.skill-list ul {
-    padding-left: 0;
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-ul.skill-menu li, div.skill-list ul li {
-    display: inline-block;
-    float: left;
-    list-style-type: none;
-    width: 234px;
-}
-ul.skill-menu li.active {
-    background-color: RGBA(195,211,226,.5);
-}
-ul.skill-menu li {
-    background-color: RGBA(214,228,234,.5);
-}
-ul.skill-menu li a {
-    width: 100%;
-    text-decoration: none;
-    color: #344756;
-}
-div.skill-list ul li {
-    display: inline-block;
-    overflow: auto;
-    margin-top: 10px;
-    padding: 6px 0;
-}
-*/
 
 .skills {
-    width: 468px;
-/*    max-width: 50%;*/
+    max-width: 50%;
     float: left;
+    padding: 8px;
 }
 
-.skills ul {
-/*    padding-left: 0;*/
+.tabs {
+    width: 100%;
+    margin: 0;
+    overflow: auto;
 }
 
-.skills li {
-/*    display: inline-block;*/
-    margin-top: 10px;
+ul.tab-links {
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+}
+
+.tab-links li {
+    float: left; 
+    list-style: none;
+    margin: 0px; 5px;
+}
+
+.tab-links a {
+    background-color: rgb(195,211,226);
+    border-radius: 5px 5px 0px 0px;
+    display: inline-block;
+    padding: 9px 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #344756;
+    transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+    color: #344756;
+    background-color: rgb(214,228,234);
+}
+
+.tab-links li.active a {
+    color: #344756;
+    background-color:  rgb(214,228,234);
+}
+
+.tab-content {
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(214,228,234);
+    border-radius: 3px;
+}
+
+.tab-content ul {
+    display: inline-block;
+}
+
+.tab li {
+    margin-bottom: 10px;
     float: left;
     width: 50%;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
 }
 
 div.clear {
@@ -206,7 +238,7 @@ div.clear {
 }
 
 div.project-left, div.project-right {
-    width: 480px;
+    max-width: 50%;
 }
 div.project-left {
     float: left;

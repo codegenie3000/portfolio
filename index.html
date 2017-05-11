@@ -2,81 +2,117 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<script
-			src="https://code.jquery.com/jquery-3.1.1.min.js"
-			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-	<script
-			src="https://code.jquery.com/jquery-3.1.1.min.js"
-			integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			crossorigin="anonymous"></script>
-	<script src="semantic/dist/semantic.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('.fixed').visibility({
-				type: 'fixed',
-				offset: 15
-			});
-		});
-	</script>
-	<style>
-		img.profile-image {
-			float: right;
-			height: 200px;
-			width: 200px;
-			padding: 10px;
-			border-radius: 50%;
-		}
-		section.light-blue {
-			background-color: lightblue;
-		}
-		.test{
-			background-color: blue;
-			padding: 0em;
-		}
-		.test.overlay{
-			position: fixed;
-		}
-	</style>
-	<title>Jonathan Peralez, Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Jonathan Peralez</title>
 </head>
 <body>
 
-<header class="ui text container">
-	<h1 class="ui header">Jonathan Peralez</h1>
-	<p>Full-Stack Developer and business professional</p>
-</header>
+<section>
+	<header>
+		<div class="background">
+			<div class="header">
+				<h1>Full Stack Node.js Developer</h1>
+				<img src="img/small-diamond.png">
+				<h1>Business Professional</h1>
+				<p class="orange">Let's create something</p>
+				<img class="down-arrow" src="img/down_arrow.png">
+			</div>
+		</div>
+	</header>
+</section>
 
-<nav class="ui borderless menu fixed">
-	<div class="ui text container">
-		<a href="#" class="item">About</a>
-		<a href="#" class="item">Portfolio</a>
-		<a href="#" class="item">Contact</a>
+<section>
+	<nav>
+		<div class="menu menu-dark">
+			<p class="title title-dark">Jonathan Peralez</p>
+			<div class="name-underline underline-dark"> </div>
+			<ul>
+				<li class="active"><a href="#">About me</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Connect</a></li>
+			</ul>
+		</div>
+	</nav>
+</section>
+
+<section>
+	<div class="container">
+		<h1><href src="#">Get to know me</href></h1>
 	</div>
-</nav>
-
-<section class="light-blue">
-	<div class="ui text container grid">
-		<div class="sixteen wide column">
-			<p></p>
-			<p>A full-stack developer and business professional, Jonathan Peralez, combines software development expertise business acumen and experience.</p>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Eastern_Grey_Squirrel.jpg" class="profile-image">
-			<p></p>
-
-			<p>Open up in there! Oh, no! There isn't any other way out. I can't hold them off forever! Now what? This is some rescue. When you came in here, didn't you have a plan for getting out? He's the brains, sweetheart. Well, I didn't... What the hell are you doing? Somebody has to save our skins. Into the garbage chute, wise guy. Get in there you big furry oaf! I don't care what you smell! Get in there and don't worry about it. Wonderful girl! Either I'm going to kill her or I'm beginning to like her. Get in there!</p>
+	<div class="container">
+        <div class="skills">
+            <div class="tabs">
+                <ul class="tab-links">
+                    <li class="active"><a href="#tab1">Development Skills</a></li>
+                    <li><a href="#tab2">Business Skills</a></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="tab1" class="tab active">
+                    <ul>
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>MeteorJS</li>
+                        <li>Javascript, HTML, CSS</li>
+                        <li>LESS, SASS</li>
+                        <li>Gulp</li>
+                        <li>SQL</li>
+                        <li>Bootstrap, Foundation</li>
+                        <li>React JS</li>
+                        <li>Express JS</li>
+                    </ul>
+                </div>
+                <div id="tab2" class="tab">
+                    <ul>
+                        <li>Strategic Management</li>
+                        <li>Change Management</li>
+                        <li>Project Management</li>
+                        <li>Financial Modeling</li>
+                        <li>Mergers &amp Acquisitions</li>
+                        <li>Due Diligence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<div class="paragraph">
+			<h2>About me</h2>
+			<p>Let’s talk about grit. When the going gets tough the tough get going.</p>
+			<p>I love a challenge whether it’s a technology or business problem or both. Much of my success can be attributed to my ability to quickly adapt to a given situation, and work through challenges no matter the difficulty. I enjoy the problem solving process it often requires not only technical skills but also creativity to reach the best outcome.</p>
+			<p>I obtained a degree in Business Administration with an emphasis in Information Systems from the University of Southern California.</p>
+			<p>I begun my career in turnaround consulting where I helped companies turn their fortunes whether it was due to new competition in the market, negative profits, or an unforeseen disaster.</p>
+			<p>Most recently I co-founded an educational technology startup.  and I developed our technology stack.</p>
 		</div>
 	</div>
 </section>
-
-<section class="ui text container grid">
-	<div class="sixteen wide column">
-		<h1>Portfolio</h1>
-	</div>
-	<div class="eight wide column">Classroom Genie website</div>
-	<div class="eight wide column">Classroom Genie web application</div>
+<hr>
+<section>
+		<div class="container projects">
+			<h1>Projects</h1>
+			<h2>Classroom Genie</h2>
+			<p>I co-founded Classroom Genie which helps K-12 teachers crowdfund to get Gift Cards from Amazon.com and Walmart so they can get more supplies for their classroom.</p>
+			<div class="project-left">
+				<h3>Classroom Genie Web App</h3>
+				<p>The web application was built in MeteorJS and utilizes MongoDB. For its front end, it uses Bootstrap and Spacebars (a derivative of Handlebars). Functionality includes:</p>
+				<ul>
+					<li>Automated creation of a user's crowdfunding campaign</li>
+					<li>Payment processing</li>
+					<li>Promo code management</li>
+					<li>Email notifications and marketing using Foundation Emails</li>
+					<li>Cron jobs</li>
+				</ul>
+				<p>It also includes various NPM API integrations including Stripe and Mailgun.</p>
+			</div>
+			<div class="project-right">
+				<h3>Classroom Genie Website</h3>
+				<p>Designed the website and built it using Twitter Bootstrap.</p>
+			</div>
+		</div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="myscript.js"></script>
 </body>
 </html>
