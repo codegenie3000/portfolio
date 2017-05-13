@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<section>
+<section id="top">
 	<header>
 		<div class="background">
 			<div class="header">
@@ -18,7 +18,7 @@
 				<img src="img/small-diamond.png">
 				<h1>Business Professional</h1>
 				<p class="orange">Let's create something</p>
-				<img class="down-arrow" src="img/down_arrow.png">
+				<a href="#get-to-know"><img class="down-arrow" src="img/down_arrow.png"></a>
 			</div>
 		</div>
 	</header>
@@ -27,20 +27,22 @@
 <section>
 	<nav>
 		<div class="menu menu-dark">
-			<p class="title title-dark">Jonathan Peralez</p>
-			<div class="name-underline underline-dark"> </div>
+            <div class="top-title">
+                <p class="title title-dark"><a href="#top">Jonathan Peralez</a></p>
+                <div class="name-underline underline-dark">&nbsp;</div>
+            </div>
 			<ul>
-				<li class="active"><a href="#">About me</a></li>
-				<li><a href="#">Projects</a></li>
+				<li class="active"><a href="#get-to-know">About me</a></li>
+				<li><a href="#projects">Projects</a></li>
 				<li><a href="#">Connect</a></li>
 			</ul>
 		</div>
 	</nav>
 </section>
 
-<section>
+<section id="get-to-know">
 	<div class="container">
-		<h1><href src="#">Get to know me</href></h1>
+		<h1 class="add-padding">Get to know me</h1>
 	</div>
 	<div class="container">
         <div class="skills">
@@ -79,21 +81,20 @@
         </div>
 		<div class="paragraph">
 			<h2>About me</h2>
-			<p>Let’s talk about grit. When the going gets tough the tough get going.</p>
-			<p>I love a challenge whether it’s a technology or business problem or both. Much of my success can be attributed to my ability to quickly adapt to a given situation, and work through challenges no matter the difficulty. I enjoy the problem solving process it often requires not only technical skills but also creativity to reach the best outcome.</p>
-			<p>I obtained a degree in Business Administration with an emphasis in Information Systems from the University of Southern California.</p>
-			<p>I begun my career in turnaround consulting where I helped companies turn their fortunes whether it was due to new competition in the market, negative profits, or an unforeseen disaster.</p>
-			<p>Most recently I co-founded an educational technology startup.  and I developed our technology stack.</p>
+			<p>I love building things and solving problems. It doesn’t matter whether it’s software, an interesting product, a company, or an organization.</p>
+			<p>Although I have a background in management consulting, I have always had a foot firmly rooted in technology. I started my career working within turnaround consulting where I helped companies succeed through adversity due to new competition, changes in the market, suboptimal management, or an unforeseen disaster. Working in turnaround consulting was immensely rewarding because it presented massive challenges which demanded creativity and resourcefulness.</p>
+			<p>Building on my experience with business and technology, I later co-founded Classroom Genie and I was responsible for designing, developing, and maintaining our web application in addition to strategic management. This experience was revelatory as it rekindled my passion for software and systems. Since starting this company, I have lived and breathed software development.</p>
 		</div>
 	</div>
 </section>
 <hr>
-<section>
+<section id="projects">
 		<div class="container projects">
-			<h1>Projects</h1>
+			<h1 class="add-padding">Projects</h1>
 			<h2>Classroom Genie</h2>
 			<p>I co-founded Classroom Genie which helps K-12 teachers crowdfund to get Gift Cards from Amazon.com and Walmart so they can get more supplies for their classroom.</p>
-			<div class="project-left">
+            <div class="project-details">
+                <div class="project-left">
 				<h3>Classroom Genie Web App</h3>
 				<p>The web application was built in MeteorJS and utilizes MongoDB. For its front end, it uses Bootstrap and Spacebars (a derivative of Handlebars). Functionality includes:</p>
 				<ul>
@@ -109,6 +110,7 @@
 				<h3>Classroom Genie Website</h3>
 				<p>Designed the website and built it using Twitter Bootstrap.</p>
 			</div>
+            </div>
 		</div>
 </section>
 
