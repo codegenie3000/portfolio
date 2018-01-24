@@ -129,13 +129,13 @@ div .title {
 
 div .title.title-dark a {
     color: rgb(255,255,255);
-    transition: color: 1s;
+    transition: background-color 1s;
     text-decoration-line: none;
 }
 
 div .title.title-light a {
     color: rgb(85,120,142);
-    transition: color: 1s;
+    transition: background-color 1s;
     text-decoration-line: none;
 }
 
