@@ -53,3 +53,6 @@ fabric.properties
 # *.ipr
 
 # End of https://www.gitignore.io/api/phpstorm
+
+# Library Files
+node_modules/
