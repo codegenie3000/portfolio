@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --config webpack.config.js",
-    "browser-sync": "browser-sync start --server --files *.html *.css"
+    "browser-sync": "browser-sync start --server --files *.html *.css *.js"
   },
   "repository": {
     "type": "git",
