@@ -17,6 +17,7 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 h2, h3, h4, h5 {
@@ -50,7 +51,8 @@ p.title {
 
 header div.background {
     background: url(img/background.jpg) no-repeat center -300px;
-    height: 1000px;
+    height: 100vh;
+    /*height: 1000px;*/
     margin-top: 0;
 }
 
